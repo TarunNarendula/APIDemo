@@ -39,6 +39,8 @@ func fetchData() {
          self.revenue = Mapper<Instructor>().map(JSONObject: jsonData)?.object
          UserSingleton.shared.loggedInUser = self.revenue
             
+            print("hie")
+            
             
            /* if (UserSingleton.shared.loggedInUser == nil)  {
                 UserDefaults.standard.set("http://dev.onata.com:3000/auth/login", forKey:"Auth")
